@@ -1,0 +1,104 @@
+div {
+    padding: 15px;
+}
+
+img {
+    width: 100%;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title img {
+    width: 85vw;
+    height: auto;
+    border-radius: 0;
+    align-self: center;
+}
+h1, h2{
+    color: white;
+}
+
+p {
+    color: var(--color1);
+}
+
+#product {
+    color: black;
+}
+
+h3 {
+    color: var(color3);
+}
+
+.card {
+    background-color: white; 
+    border-radius: 15px;  
+    padding: 15px;
+    margin-bottom: 10px;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+img {
+    width: 95%;
+    margin: 10px;
+}
+
+input, select {
+    font-family: 'Comfortaa';
+    height: 2rem;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+button {
+    border-radius: 10px;
+    height: 2rem;
+    margin-top: 10px;
+    font-family: 'Comfortaa';
+}
+
+.catalogue {
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+	.card {
+        width: 40vw;
+        margin: 10px;
+    }
+
+    .catalogue {
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .sort {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+}
+
+@media (min-width: 992px) {
+	.card {
+        width: 30vw;
+    }
+
+    .catalogue {
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+}

@@ -1,0 +1,17 @@
+div {
+    padding: 15px;
+}
+
+h2 {
+    color: white;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
+p {
+    margin-bottom: 10px;
+    color: var(--color1);
+}

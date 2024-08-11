@@ -1,0 +1,31 @@
+<section>
+    <div class="title">
+        <div *ngFor="let info of infos">
+            <h2>{{ info.title }}</h2>
+            <img [src]="info.img_home" [alt]="info.alt_home">
+            <p>{{ info.text_home }} </p>
+        </div>
+    </div>
+    <h2>Nos produits</h2>
+    <div>
+        <div class="sort">
+            <select name="price" id="price" [(ngModel)]="sortPrice">
+                <option value="ascending">Trier par prix croissant</option>
+                <option value="descending">Trier par prix décroissant</option>
+            </select>
+
+            <div id="search">
+                <p>Chercher un article</p>
+                <input type="search" [(ngModel)]="nameSearch">
+            </div>
+        </div>
+
+        <div class="catalogue" *ngIf="nameSearch!==null">
+            <div class="card" *ngFor="let product of products | sortByPrice:sortPrice | filterByName:nameSearch">
+                <h3>{{ product.name }}</h3>
+                <img [src]="product.img" [alt]="product.alt">
+                <p id="product">{{ product.price }} €</p>
+                <button (click)="showMoreDetails(product.id)">En savoir plus</button>
+            </div>
+        </div>
+    </div>

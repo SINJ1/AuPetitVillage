@@ -1,0 +1,16 @@
+div {
+    height: 90px;
+    background-color: var(--color2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    height: 50px;
+    padding: 5px;
+}
+
+img:hover {
+    opacity: 0.5;
+}

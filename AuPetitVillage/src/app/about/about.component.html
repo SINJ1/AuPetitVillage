@@ -1,0 +1,7 @@
+<section>
+    <div *ngFor="let info of infos">
+        <h2>{{ info.title }}</h2>
+        <p>{{ info.text_apropos }} </p>
+        <img [src]="info.img_apropos" [alt]="info.alt_apropos">
+    </div>
+</section>
